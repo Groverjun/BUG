@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body style="height: 500000px;">
+		<ul id="message">
+			<li onclick="message()">
+				<img src="img/Recruit-students.gif"/>
+			</li>
+			<li>
+				<img src="img/QQ.gif"/>
+				<span></span>
+				<p>
+					<img src="img/rewei.jpg"/>
+					<em>QQ扫一扫</em>
+				</p>				
+			</li>
+			<li>
+				<img src="img/weixin.gif"/>
+				<span></span>
+				<p>
+					<img src="img/rewei.jpg"/>
+					<em>微信扫一扫</em>
+				</p>
+			</li>
+			<li class="liuyan">
+				<img src="img/liuyan.gif"/>
+				<div id="leaveWord" class="clear leaveWord_cls">
+					<p class="learHeader"><span id="head2">×</span><span id="head1">-</span></p>
+					<h1 class="leaveWord_h1">请留言我们经尽快联系您 </h1>			
+					<div class="leaveWord_text">
+						<textarea id="leave_txt" placeholder="请留言"></textarea>
+					</div>
+					<h1>请务必留下您的联系方式，方便我们联系您</h1>
+					<ul class="leaveWord_ul">
+						<li>
+							<label for="leave_name">姓名：</label>
+							<input type="text" placeholder="必填..."  id="leave_name" pattern="" required onchange="judgeName()"/>
+							<span id="judgeName"></span>
+						</li>
+						<li>
+							<label for="leave_pho">手机：</label>
+							<input type="text" placeholder="必填..."  id="leave_pho"   required onchange="judgePho()"/>
+							<span id="judgePho"></span>
+						</li>
+						<li>
+							<label for="leave_ema">邮箱：</label>
+							<input type="email" placeholder="必填..."  id="leave_ema" required onchange="judgeEma()"/>
+							<span id="judgeEma"></span>
+						</li>
+					</ul>
+					<div class="leaveWord_submit">
+						<button id="leaveWord_sub">提交</button>
+					</div>
+				</div>
+			</li>
+			<li class="pho">
+				<img src="img/pho.gif"/>
+				<div>
+					<input type="text" placeholder="输入您的电话" />
+					<button>点击免费通话</button>
+				</div>
+			</li>
+			<li id="top">
+				<img src="img/top.gif"/>
+			</li>			
+		</ul>
+	</body>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript"
+	src="//webchat.7moor.com/javascripts/7moorInit.js?accessId=c5f229f0-77fe-11e7-9195-2d4b751f8cf8&amp;autoShow=false"
+	async="async"></script
+	<script type="text/javascript"
+	src="//webchat.7moor.com/online?accessId=c5f229f0-77fe-11e7-9195-2d4b751f8cf8&amp;referrer=&amp;callbackF=getChatConfig&amp;action=getOnlineStates&amp;__=1502788446878"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

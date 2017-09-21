@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-style: normal;
+}
+
+#qimo_chatpup {}
+
+#message {
+	position: fixed;
+	height: 400px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 9999999999999999999999999999999999999999;
+}
+
+#message>li {
+	width: 70px;
+	height: 50px;
+	text-align: center;
+	border: 1px solid #d6d6d6;
+	border-bottom: none;
+	position: relative;
+	cursor: pointer;
+	background: #fff;
+}
+
+#message>li:last-child {
+	border-bottom: 1px solid #d6d6d6;
+}
+
+#message>li>span {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right: 10px solid #3755c4;
+	top: 15px;
+	left: -85px;
+	z-index: -1;
+	transition: all 0.5s;
+}
+
+#message>li>p {
+	position: absolute;
+	width: 87px;
+	top: 15px;
+	left: -50px;
+	z-index: -1;
+	transition: all 0.5s;
+	background: #fff;
+}
+#message>li:hover>span {
+	left: 12px;
+}
+
+#message>li:hover>p {
+	left: 98px;
+}
+
+#message>li>p img {
+	border: 1px solid #3755c4;
+}
+
+#message>li>p em {
+	font-size: 12px;
+	color: #3755c4;
+	font-weight: bold;
+}
+
+
+#message .pho>div {
+	width: 150px;
+	background: #eee;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 10px;
+	border-radius: 5px;
+	z-index: -1;
+	transition: all 0.5s;
+}
+
+#message .pho>div input {
+	width: 130px;
+	height: 32px;
+	border: none;
+	outline: medium;
+	border-radius: 5px;
+	background: url("http://ztcbucket.oiaqye7985.com/kf/inputbj_07.png") no-repeat center;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#message .pho>div button {
+	width: 100%;
+	height: 34px;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	background: -webkit-radial-gradient(top, #0e39d9, #0a299c);
+	background: -moz-radial-gradient(top, #0e39d9, #0a299c);
+	background: -ms-radial-gradient(top, #0e39d9, #0a299c);
+	border: none;
+}
+
+#message .pho>div button:hover {
+	background: -webkit-radial-gradient(top, #0e39d9, #0a299c);
+	background: -moz-radial-gradient(top, #0e39d9, #0a299c);
+	background: -ms-radial-gradient(top, #0a299c, #0e39d9);
+}
+
+#message .pho>div button:active {
+	top: 4px;
+	box-shadow: inset 0 1px 3px #aa2c3d;
+	background: -webkit-radial-gradient(top, #0e39d9, #0a299c);
+	background: -moz-radial-gradient(top, #0e39d9, #0a299c);
+	background: -ms-radial-gradient(top, #0e39d9, #0a299c);
+}
+
+#message .pho:hover div {
+	left: -153px;
+}
+
+#message #leaveWord {
+	width: 356px;
+	height: 492px;
+	box-shadow: 0 0 5px 3px #c9c9c9;
+	margin: auto;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	position: fixed;
+	bottom: -513px;
+	right: 165px;
+	border-radius: 5px;
+	background: #fff;
+	z-index: -1;
+}
+
+#message #leaveWord .learHeader {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	background: #00cdcd;
+	line-height: 50px;
+}
+
+#message #leaveWord .learHeader span {
+	float: right;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	margin: 0 15px;
+	cursor: pointer;
+}
+
+#message #leaveWord .learHeader span:hover {
+	font-size: 26px;
+}
+
+#message #leaveWord .leaveWord_h1 {
+	font-size: 14px;
+	margin: 20px;
+	line-height: 16px;
+}
+
+#message #leaveWord .leaveWord_h1 span {
+	float: right;
+}
+
+#message #leaveWord>h1 {
+	font-size: 14px;
+	margin: 20px;
+	line-height: 16px;
+}
+
+#message #leaveWord .leaveWord_ul {
+	list-style: none;
+	height: 130px;
+	margin: 0;
+	padding: 0 0 0 24px;
+}
+
+#message #leaveWord .leaveWord_ul li {
+	margin: 0 0 25px 0;
+}
+
+#message #leaveWord .leaveWord_ul li label {
+	font-size: 16px;
+	color: #282828;
+}
+
+#message #leaveWord .leaveWord_ul li span {
+	font-weight: bold;
+}
+
+#message #leaveWord .leaveWord_text {
+	width: 100%;
+	height: 157px;
+	margin-top: 3px;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+
+#message #leaveWord .leaveWord_text textarea {
+	width: 100%;
+	height: 157px;
+	padding: 0;
+	margin: 0;
+	resize: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 15px 10px;
+	box-sizing: border-box;
+}
+
+#message #leaveWord .leaveWord_submit {
+	width: 100%;
+	text-align: center;
+	clear: both;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+#message #leaveWord .leaveWord_submit button {
+	width: 100%;
+	height: 34px;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	background: #00cdcd;
+	border: none;
+}
+
+#message #leaveWord .leaveWord_submit button:hover {
+	background: linear-gradient(top, #00cdcd, #41dada);
+}
+
+#message #leaveWord .leaveWord_submit button:active {
+	top: 4px;
+	box-shadow: inset 0 1px 3px #aa2c3d;
+	background: linear-gradient(top, #41dada, #00cdcd);
+}
